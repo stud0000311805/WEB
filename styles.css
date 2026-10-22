@@ -59,6 +59,11 @@ a {
     color: var(--blue);
 }
 
+.svg_block {
+    display: flex;
+    align-items: center;
+}
+
 .first_page {
     height: 900px;
     overflow: hidden;
@@ -195,136 +200,3 @@ h1 span {
     margin: 27px 0 0;
     text-align: center;
 }
-/* 
-@media (max-width: 900px) {
-    .header {
-        padding: 12px 0;
-    }
-
-    .header_inner {
-        padding: 0 16px;
-    }
-
-    .navigation {
-        display: none;
-    }
-
-    .header_contacts .contact-link--phone {
-        display: none;
-    }
-
-    .main {
-        padding-top: 78px;
-    }
-
-    .first_page {
-        min-height: 0;
-        align-items: flex-start;
-        gap: 24px;
-        padding: 42px 24px 60px;
-    }
-
-    .first_page_content {
-        flex-basis: 52%;
-    }
-
-    h1 {
-        font-size: clamp(32px, 5vw, 44px);
-        letter-spacing: -1.8px;
-    }
-
-    .first_page_description {
-        margin: 22px 0 32px;
-    }
-
-    .consultation {
-        padding: 20px 18px;
-    }
-
-    .consultation_fields {
-        grid-template-columns: 1fr;
-        gap: 16px;
-    }
-
-    .consultation button {
-        width: 140px;
-    }
-
-    .first_page_gallery {
-        flex-basis: 420px;
-        width: 42vw;
-        gap: 10px;
-    }
-}
-
-@media (max-width: 600px) {
-
-
-    .header_inner {
-        justify-content: center;
-        min-height: 48px;
-    }
-
-
-    .main {
-        padding-top: 72px;
-    }
-
-    .first_page {
-        display: flex;
-        flex-direction: column;
-        align-items: stretch;
-        gap: 0;
-        padding: 42px 16px 48px;
-    }
-
-    .first_page_content {
-        display: contents;
-    }
-
-    h1 {
-        order: 1;
-        max-width: 420px;
-        font-size: clamp(30px, 8vw, 38px);
-        line-height: 1.08;
-        letter-spacing: -1.4px;
-    }
-
-    .first_page_description {
-        order: 2;
-        max-width: 420px;
-        margin: 24px 0 28px;
-        font-size: 13px;
-    }
-
-    .first_page_gallery {
-        order: 3;
-        align-self: center;
-        flex: 0 1 auto;
-        width: min(100%, 420px);
-        margin: 14px 0 26px;
-        gap: 8px;
-        transform: rotate(-8deg);
-    }
-
-    .first_page_gallery img {
-        border-radius: 16px;
-    }
-
-    .consultation {
-        order: 4;
-        width: 100%;
-        max-width: 420px;
-        align-self: center;
-        padding: 26px 18px 24px;
-    }
-
-    .consultation_heading {
-        margin-bottom: 24px;
-        font-size: 16px;
-    }
-
-    .consultation button {
-        width: 155px;
-    }
-} */
