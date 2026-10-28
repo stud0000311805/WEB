@@ -72,7 +72,7 @@ a {
     justify-content: space-between;
     align-items: center;
     margin: 0 auto;
-    padding: 0 40px 0 84px;
+    padding: 0 84px;
 }
 
 .first_page_content {
@@ -205,7 +205,6 @@ h1 span {
 
 .second_page {
     display: grid;
-    grid-template-columns: minmax(0, 496px) minmax(260px, 1fr);
     column-gap:100px;
     min-height: 520px;
     padding: 84px;
@@ -349,17 +348,8 @@ h1 span {
         margin-left: auto;
     }
 
-    .header_contacts .svg_block:first-child {
+    .header_contacts{
         display: none;
-    }
-
-    .header_contacts .svg_block:last-child a {
-        display: none;
-    }
-
-    .header_contacts .svg_block:last-child img {
-        width: 18px;
-        height: 18px;
     }
 
     .first_page {
