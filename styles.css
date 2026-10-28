@@ -263,9 +263,6 @@ h1 span {
 
 /* 426px - 768px */
 @media (max-width: 768px) {
-    .header {
-        padding: 16px 24px;
-    }
 
     .header_inner {
         gap: 20px;
@@ -273,7 +270,7 @@ h1 span {
     }
 
     .navigation {
-        gap: 14px;
+        display: none;
     }
 
     .header_contacts {
@@ -335,17 +332,8 @@ h1 span {
         gap: 12px;
     }
 
-    .logo {
-        white-space: nowrap;
-    }
-
     .navigation {
         display: none;
-    }
-
-    .header_contacts {
-        gap: 0;
-        margin-left: auto;
     }
 
     .header_contacts{
@@ -355,24 +343,11 @@ h1 span {
     .first_page {
         min-height: 0;
         display: block;
-        padding: 96px 16px 48px;
-    }
-
-    .first_page_content {
-        width: 100%;
-    }
-
-    .description {
-        margin: 18px 0 24px;
     }
 
     .consultation {
         width: 100%;
         padding: 18px;
-    }
-
-    .consultation_heading {
-        margin-bottom: 18px;
     }
 
     .consultation_fields {
@@ -381,26 +356,6 @@ h1 span {
         gap: 14px;
     }
 
-    .consultation input {
-        height: 30px;
-    }
-
-    .consultation button {
-        width: 100%;
-        height: 48px;
-        text-align: center;
-    }
-
-    .first_page_gallery {
-        width: 112%;
-        margin: 52px -6% 0;
-        gap: 8px;
-        transform: rotate(-8deg);
-    }
-
-    .first_page_gallery img {
-        border-radius: 14px;
-    }
 
     .second_page {
         display: block;
