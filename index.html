@@ -2,142 +2,379 @@
 <html lang="en">
 
 <head>
-    <meta charset="UTF-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>IT Website</title>
-    <link rel="stylesheet" href="styles.css" />
+    <link rel="stylesheet" href="styles.css">
 </head>
 
-<body>
-    <div class="page">
-        <header class="header">
-            <div class="header_inner">
-                <a class="logo" href="#top">IT WEBSITE</a>
-
-                <nav class="navigation">
-                    <a href="#services">Services</a>
-                    <a href="#media">Media</a>
-                    <a href="#cases">Cases</a>
-                    <a href="#faq">FAQ</a>
-                    <a href="#contacts">Contacts</a>
-                </nav>
-
-                <div class="header_contacts">
-                    <div class="svg_block">
-                        <img src="src/ico/phone.svg">
-                        <a href="tel:+71111111111" class="contact-link">+7 (111) 111-11-11</a>
-                    </div>
-                    <a href="tel:+71111111111" class="contact-link">+7 (111) 111-11-11</a>
-                    <div class="svg_block">
-                        <img src="src/ico/mail.svg">
-                        <a href="mailto:itcompany@mail.com" class="contact-link">itcompany@mail.com</a>
-                    </div>
-                </div>
+<body id="top">
+    <header class="header">
+        <div class="container">
+            <button class="menu_button" type="button" aria-label="Open menu" aria-controls="mobile-menu"
+                aria-expanded="false">☰</button>
+            <a class="logo" href="#top">IT WEBSITE</a>
+            <nav class="navigation">
+                <a href="#services">Services</a>
+                <a href="#media">Media</a>
+                <a href="#cases">Cases</a>
+                <a href="#faq">FAQ</a>
+                <a href="#contacts">Contacts</a>
+            </nav>
+            <div class="header_contacts">
+                <img src="src/ico/phone.svg" alt="Phone">
+                <a href="tel:+71111111111">+7 (111) 111-11-11</a>
+                <img src="src/ico/mail.svg" alt="Email">
+                <a href="mailto:itcompany@mail.com">itcompany@mail.com</a>
             </div>
-        </header>
+        </div>
+    </header>
 
-        <main class="main">
-            <div class="first_page">
+    <div class="mobile_menu" id="mobile-menu" aria-hidden="true">
+        <button class="menu_close" type="button" aria-label="Close menu">×</button>
+        <a class="menu_logo" href="#top">IT WEBSITE</a>
+        <nav>
+            <a href="#services">Services</a>
+            <a href="#media">Media</a>
+            <a href="#cases">Cases</a>
+            <a href="#faq">FAQ</a>
+            <a href="#contacts">Contacts</a>
+        </nav>
+        <div class="menu_contacts">
+            <a href="tel:+71111111111">+7 (111) 111-11-11</a>
+            <a href="mailto:itcompany@mail.com">itcompany@mail.com</a>
+        </div>
+    </div>
+
+    <main>
+        <div class="first_page">
+            <div class="container">
                 <div class="first_page_content">
-                    <h1>Development of <span>mobile applications</span> and <span>web services</span> of
-                        any complexity</h1>
+                    <h1>Development of <span>mobile applications</span> and <span>web services</span> of any complexity
+                    </h1>
                     <p class="description">We create mobile applications for iOS, Android that transfer your business to
                         mobile applications of your customers' devices</p>
-
-                    <form class="consultation">
-                        <div class="consultation_heading">Leave your contacts and we will call you back <br>within 30
-                            minutes</div>
-                        <div class="consultation_fields">
-                            <label>
-                                <span>Phone number</span>
-                                <input type="tel" value="+7 (111) 111-11-11">
-                            </label>
-                            <label>
-                                <span>Full name</span>
-                                <input type="text" value="Иван Иванов">
-                            </label>
-                            <button type="submit">Get consultation</button>
-                        </div>
-                    </form>
                 </div>
-
                 <div class="first_page_gallery">
-                    <img src="src/pic1.jpg">
-                    <img src="src/pic2.jpg">
-                    <img src="src/pic3.jpg">
-                    <img src="src/pic4.jpg">
-                    <img src="src/pic5.jpg">
-                    <img src="src/pic6.jpg">
+                    <img src="src/pic1.jpg" alt="">
+                    <img src="src/pic2.jpg" alt="">
+                    <img src="src/pic3.jpg" alt="">
+                    <img src="src/pic4.jpg" alt="">
+                    <img src="src/pic5.jpg" alt="">
+                    <img src="src/pic6.jpg" alt="">
                 </div>
+                <form class="consultation">
+                    <strong>Leave your contacts and we will call you back within 30 minutes</strong>
+                    <div class="form_fields">
+                        <label>Phone number<input type="tel" value="+7 (111) 111-11-11"></label>
+                        <label>Full name<input type="text" value="Иван Иванов"></label>
+                        <button type="submit">Get<br>consultation</button>
+                    </div>
+                </form>
             </div>
-            <div class="second_page">
+        </div>
+
+        <div class="second_page">
+            <div class="container">
                 <div class="name_block">
-                    <h1>Full development cycle</h1>
+                    <h2>Full development cycle</h2>
                     <p class="description">We use proven technologies</p>
                 </div>
                 <div class="languages_block">
                     <div>
-                        <h2>Web</h2>
-                        <p class="enums">PHP <span>/</span> Javascript <span>/</span> Node.JS <span>/</span> Web Socket <span>/</span>
-                            Socket.io <span>/</span> Vue.js <span>/</span> Nuxt <span>/</span> MySQL <span>/</span>
-                            Laravel <span>/</span> GO lang <span>/</span> django <span>/</span> Python</p>
+                        <h3>Web</h3>
+                        <p class="enums">PHP <span>/</span> Javascript <span>/</span> Node.JS <span>/</span> Web Socket
+                            <span>/</span> Socket.io <span>/</span> Vue.js <span>/</span> Nuxt <span>/</span> MySQL
+                            <span>/</span> Laravel <span>/</span> GO lang <span>/</span> django <span>/</span> Python
+                        </p>
                     </div>
                     <div>
-                        <h2>Mobile</h2>
-                        <p class="enums">Swift <span>/</span> Kotlin <span>/</span> Alamofire <span>/</span> Firebase <span>/</span>
-                            CoreData <span>/</span> Room <span>/</span> Realm <span>/</span> Coroutine <span>/</span>
-                            RxJava <span>/</span> RxSwift <span>/</span> Unit Test <span>/</span> Navigation</p>
+                        <h3>Mobile</h3>
+                        <p class="enums">Swift <span>/</span> Kotlin <span>/</span> Alamofire <span>/</span> Firebase
+                            <span>/</span> CoreData <span>/</span> Room <span>/</span> Realm <span>/</span> Coroutine
+                            <span>/</span> RxJava <span>/</span> RxSwift <span>/</span> Unit Test <span>/</span>
+                            Navigation
+                        </p>
                     </div>
                 </div>
-                <div class="nav_block">
-                    <a href="#ios">iOS development <span>&#8250</span></a>
-                    <a href="#android">Android development <span>&#8250</span></a>
-                    <a href="#web">Web development <span>&#8250</span></a>
-                    <a href="#design">UI/UX design <span>&#8250</span></a>
-                    <a href="#testing">Testing <span>&#8250</span></a>
-                    <a href="#launch">Launch <span>&#8250</span></a>
-                    <a href="#consulting">IT consulting <span>&#8250</span></a>
-                </div>
+                <nav class="nav_block">
+                    <a href="#services">iOS development <span>›</span></a>
+                    <a href="#services">Android development <span>›</span></a>
+                    <a href="#services">Web development <span>›</span></a>
+                    <a href="#services">UI/UX design <span>›</span></a>
+                    <a href="#services">Testing <span>›</span></a>
+                    <a href="#services">Launch <span>›</span></a>
+                    <a href="#contacts">IT consulting <span>›</span></a>
+                </nav>
             </div>
-        </main>
+        </div>
 
-        <footer>
-            <div class="footer_card">
-                <a class="footer_logo" href="#top">IT WEBSITE</a>
-                <div class="footer_contacts">
-                    <div class="footer_item">
-                        <div class="svg_block">
-                            <img src="src/ico/phone_footer.svg">
-                            <span class="footer_label">Contact nums</span>
-                        </div>
-                        <strong>+7 (778) 395 90 26</strong>
+        <div class="third_page" id="services">
+            <div class="container">
+                <h2>Developed more than <span>100</span><br>projects in <span>15</span> industries</h2>
+                <div class="industry_list">
+                    <span><img src="src/ico/frames/frame1.svg" alt="">Social media</span>
+                    <span><img src="src/ico/frames/frame2.svg" alt="">Education</span>
+                    <span><img src="src/ico/frames/frame3.svg" alt="">IT</span>
+                    <span><img src="src/ico/frames/frame4.svg" alt="">Fitness and sport</span>
+                    <span><img src="src/ico/frames/frame5.svg" alt="">Auto, transport</span>
+                    <span><img src="src/ico/frames/frame6.svg" alt="">TV series</span>
+                    <span><img src="src/ico/frames/frame7.svg" alt="">Bank</span>
+                    <span><img src="src/ico/frames/frame8.svg" alt="">Medicine, health</span>
+                    <span><img src="src/ico/frames/frame9.svg" alt="">Startups</span>
+                    <span><img src="src/ico/frames/frame10.svg" alt="">Construction</span>
+                    <span><img src="src/ico/frames/frame11.svg" alt="">Restaurants, food delivery</span>
+                    <span><img src="src/ico/frames/frame12.svg" alt="">Religion</span>
+                    <span><img src="src/ico/frames/frame13.svg" alt="">Game projects</span>
+                    <span><img src="src/ico/frames/frame14.svg" alt="">Marketplaces</span>
+                    <span><img src="src/ico/frames/frame15.svg" alt="">Online courses</span>
+                </div>
+            </div>
+        </div>
+
+        <div class="fourth_page" id="media">
+            <div class="container">
+                <h2 id="cases">Projects we are proud of</h2>
+                <p class="section_text">Our software development company is truly proud of the wonderful clients we have
+                    worked with.</p>
+                <div class="case_tabs">
+                    <a href="#cases">I-teka</a>
+                    <a href="#cases">Dauletten</a>
+                    <a href="#cases">Guru Bosch</a>
+                    <a href="#cases">Santo</a>
+                    <a href="#cases">Home Credit Bank</a>
+                    <a href="#cases">BI Partners</a>
+                    <a href="#cases">Euraspharma</a>
+                </div>
+                <div class="case_block">
+                    <div>
+                        <h3>I-teka</h3>
+                        <p>The application is designed to search for drugs by availability in pharmacies in cities.
+                            During searching, you receive the information help many people.</p>
+                        <p class="enums">Business analysis <span>/</span> iOS <span>/</span> Android <span>/</span> QA
+                            <span>/</span> UI/UX Design
+                        </p>
+                        <div class="stats"><strong>400%<small>User Growth</small></strong><strong>+200
+                                000<small>Active Users</small></strong></div>
+                        <div class="download_buttons"><img src="src/ico/app-store.svg" alt="App Store"><img
+                                src="src/ico/google-play.svg" alt="Google Play"></div>
                     </div>
-                    <div class="footer_item">
-                        <div class="svg_block">
-                            <img src="src/ico/mail_footer.svg">
-                            <span class="footer_label">Post</span>
+                    <img src="src/pic7.svg" alt="I-teka app mockup">
+                </div>
+            </div>
+        </div>
+
+        <div class="fifth_page" id="contacts">
+            <div class="container split_block">
+                <div>
+                    <h2>Let's discuss<br>your project</h2>
+                    <p>Let's figure out how to create an effective application, in cost and terms of its development</p>
+                </div>
+                <form class="request_form"><label>Best phone number<input type="tel"
+                            value="+7 (702) 517-11-98"></label><label>Full name<input type="text"
+                            value="Иван Иванов"></label><button type="submit">Discuss the project</button></form>
+            </div>
+        </div>
+
+        <div class="sixth_page">
+            <div class="container">
+                <h2>Application Development Stages</h2>
+                <div class="stages_list">
+                    <article><img class="stage_number" src="src/ico/nums/1.svg" alt="">
+                        <div class="stage_content">
+                            <div class="stage_heading">
+                                <img class="stage_icon" src="src/ico/planning.svg" alt="">
+                                <h3>Analysis</h3>
+                            </div>
+                            <p>We write technical specifications for development, taking into account the business
+                                processes and technologies of the customer and the needs of users.</p>
                         </div>
-                        <strong>mail@mail.com</strong>
+                    </article>
+                    <article><img class="stage_number" src="src/ico/nums/2.svg" alt="">
+                        <div class="stage_content">
+                            <div class="stage_heading">
+                                <img class="stage_icon" src="src/ico/design.svg" alt="">
+                                <h3>Design</h3>
+                            </div>
+                            <p>We adapt the brand identity to the platform guidelines and create clear, user-friendly
+                                experiences.</p>
+                        </div>
+                    </article>
+                    <article><img class="stage_number" src="src/ico/nums/3.svg" alt="">
+                        <div class="stage_content">
+                            <div class="stage_heading">
+                                <img class="stage_icon" src="src/ico/development.svg" alt="">
+                                <h3>Development</h3>
+                            </div>
+                            <p>We build scalable architecture and write clean, stable code for web and mobile products.
+                            </p>
+                        </div>
+                    </article>
+                    <article><img class="stage_number" src="src/ico/nums/4.svg" alt="">
+                        <div class="stage_content">
+                            <div class="stage_heading">
+                                <img class="stage_icon" src="src/ico/testing.svg" alt="">
+                                <h3>Testing</h3>
+                            </div>
+                            <p>We perform functional testing and fix bugs across different devices and screen sizes.</p>
+                        </div>
+                    </article>
+                    <article><img class="stage_number" src="src/ico/nums/5.svg" alt="">
+                        <div class="stage_content">
+                            <div class="stage_heading">
+                                <img class="stage_icon" src="src/ico/launch.svg" alt="">
+                                <h3>Launching</h3>
+                            </div>
+                            <p>We prepare the app for publication and help launch it in stores and production
+                                environments.</p>
+                        </div>
+                    </article>
+                    <article><img class="stage_number" src="src/ico/nums/6.svg" alt="">
+                        <div class="stage_content">
+                            <div class="stage_heading">
+                                <img class="stage_icon" src="src/ico/support.svg" alt="">
+                                <h3>Support</h3>
+                            </div>
+                            <p>We monitor the product, update it, and keep the application stable after release.</p>
+                        </div>
+                    </article>
+                </div>
+            </div>
+        </div>
+
+        <div class="seventh_page">
+            <div class="container split_block">
+                <div>
+                    <h2>Our team</h2>
+                    <p>Thousand is a full-cycle digital production company with its own product analytics, design,
+                        research and mobile development.</p>
+                    <div class="stats"><strong>28<small>team
+                                members</small></strong><strong>+100<small>projects</small></strong><strong>7
+                            years<small>in IT sphere</small></strong></div>
+                    <p>All the necessary specialists - from a designer to a tester - are on our staff. We hire the best
+                        specialists in the market. It's expensive but worth it</p>
+                </div>
+                <div class="team_image"><img src="src/team-photo.svg" alt="Our team"></div>
+            </div>
+        </div>
+
+        <div class="eighth_page">
+            <div class="container split_block">
+                <h2>Get the book for free by leaving<br>your contacts</h2>
+                <form class="book_form"><label>Phone number<input type="tel"
+                            value="+7 (111) 111-11-11"></label><label>Your full name<input type="text"
+                            value="Your full name"></label><label>Email<input type="email"
+                            value="mail@mail.com"></label><button type="submit">Send me ebook to my mail</button></form>
+                <img src="src/book-cover.svg" alt="Book cover">
+            </div>
+        </div>
+
+        <div class="ninth_page" id="faq">
+            <div class="container">
+                <h2>FAQ</h2>
+                <div class="faq_list">
+                    <div class="faq_item is-open">
+                        <button class="faq_question" type="button" aria-expanded="true">
+                            <span>How long will development take?</span>
+                            <img src="src/ico/+silver.svg" alt="">
+                        </button>
+                        <div class="faq_answer">
+                            <p>Development terms directly depend on the requirements for the mobile application, the
+                                characteristics of the company, as well as the wishes of the customer.</p>
+                            <p>Average development time from start to finished application:<br>Medium projects up to
+                                3 months.<br>Large projects about 4–6 months.</p>
+                            <p>To get a more accurate estimate of the project completion time, it is necessary to
+                                determine the main task of the application, think over its logic and functionality.</p>
+                        </div>
                     </div>
-                    <div class="footer_item">
-                        <div class="svg_block">
-                            <img src="src/ico/place_footer.svg">
-                            <span class="footer_label">Adress</span>
+                    <div class="faq_item">
+                        <button class="faq_question" type="button" aria-expanded="false">
+                            <span>I will not tell my idea, do you guarantee confidentiality?</span>
+                            <img src="src/ico/+blue.svg" alt="">
+                        </button>
+                        <div class="faq_answer">
+                            <p>Yes. We respect the confidentiality of every project and can sign a non-disclosure
+                                agreement before discussing your idea.</p>
                         </div>
-                        <strong>City city, steet st. 90</strong>
                     </div>
-                    <div class="footer_item">
-                        <div class="svg_block">
-                            <img src="src/ico/document_footer.svg">
-                            <span class="footer_label">Leave a request</span>
+                    <div class="faq_item">
+                        <button class="faq_question" type="button" aria-expanded="false">
+                            <span>What is the cost of a mobile application?</span>
+                            <img src="src/ico/+blue.svg" alt="">
+                        </button>
+                        <div class="faq_answer">
+                            <p>The cost depends on the scope, features and platform. We prepare an estimate after
+                                discussing your requirements.</p>
                         </div>
-                        <strong>Leave a request</strong>
+                    </div>
+                    <div class="faq_item">
+                        <button class="faq_question" type="button" aria-expanded="false">
+                            <span>Do you provide a guarantee for the mobile application?</span>
+                            <img src="src/ico/+blue.svg" alt="">
+                        </button>
+                        <div class="faq_answer">
+                            <p>Yes, we provide support after launch and agree the warranty period for each project
+                                individually.</p>
+                        </div>
                     </div>
                 </div>
-                <p class="footer_world">We work throughout world</p>
             </div>
-        </footer>
-    </div>
+        </div>
+    </main>
+
+    <footer>
+        <div class="container footer_card">
+            <a class="footer_logo" href="#top">IT WEBSITE</a>
+            <div class="footer_contacts">
+                <div class="footer_item">
+                    <img src="src/ico/phone_footer.svg" alt="">
+                    <div><span>Contact nums</span><strong>+7 (778) 395 90 26</strong></div>
+                </div>
+                <div class="footer_item">
+                    <img src="src/ico/mail_footer.svg" alt="">
+                    <div><span>Post</span><strong>mail@mail.com</strong></div>
+                </div>
+                <div class="footer_item">
+                    <img src="src/ico/place_footer.svg" alt="">
+                    <div><span>Adress</span><strong>City city, steet st. 90</strong></div>
+                </div>
+                <div class="footer_item">
+                    <img src="src/ico/document_footer.svg" alt="">
+                    <div><span>Leave a request</span><strong>Leave a request</strong></div>
+                </div>
+            </div>
+            <p class="footer_world">We work throughout world</p>
+        </div>
+    </footer>
+
+    <script>
+        const menu = document.querySelector('.mobile_menu');
+        const menuButton = document.querySelector('.menu_button');
+        const closeMenu = () => {
+            menu.classList.remove('open');
+            menuButton.setAttribute('aria-expanded', 'false');
+            menu.setAttribute('aria-hidden', 'true');
+        };
+        menuButton.onclick = () => {
+            menu.classList.add('open');
+            menuButton.setAttribute('aria-expanded', 'true');
+            menu.setAttribute('aria-hidden', 'false');
+        };
+        document.querySelector('.menu_close').onclick = closeMenu;
+        menu.querySelectorAll('a').forEach(link => link.onclick = closeMenu);
+        document.addEventListener('keydown', event => {
+            if (event.key === 'Escape' && menu.classList.contains('open')) closeMenu();
+        });
+
+        document.querySelectorAll('.faq_question').forEach(question => {
+            question.onclick = () => {
+                const item = question.closest('.faq_item');
+                const isOpen = item.classList.toggle('is-open');
+                question.setAttribute('aria-expanded', String(isOpen));
+                question.querySelector('img').src = isOpen ? 'src/ico/+silver.svg' : 'src/ico/+blue.svg';
+            };
+        });
+    </script>
 </body>
 
 </html>
