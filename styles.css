@@ -58,7 +58,6 @@ h2 span,
     position: fixed;
     inset: 8px 0 auto;
     z-index: 10;
-    ;
 }
 
 .header>.container {
@@ -304,7 +303,8 @@ button[type="submit"] {
     margin-left: 12px;
 }
 
-.nav_block a:hover {
+.nav_block a:hover,
+.case_tabs a:hover {
     font-weight: 600;
     text-decoration: underline;
     text-decoration-color: var(--blue);
@@ -349,14 +349,6 @@ button[type="submit"] {
     color: black;
 }
 
-.case_tabs a:hover {
-    font-weight: 600;
-    text-decoration: underline;
-    text-decoration-color: var(--blue);
-    text-underline-offset: 5px;
-}
-
-
 .case_block {
     display: grid;
     gap: 24px;
@@ -370,17 +362,14 @@ button[type="submit"] {
 
 .case_block>img {
     order: -1;
+    width: 100%;
+    max-height: 260px;
+    object-fit: contain;
 }
 
 .case_block p {
     max-width: 470px;
     font-size: 11px;
-}
-
-.case_block>img {
-    width: 100%;
-    max-height: 260px;
-    object-fit: contain;
 }
 
 .stats {
@@ -468,7 +457,7 @@ button[type="submit"] {
 }
 
 .stage_content {
-    margin: 20px
+    margin: 20px;
 }
 
 .stages_list article>div {
@@ -521,14 +510,11 @@ button[type="submit"] {
     height: 190px;
     margin: auto;
     object-fit: contain;
+    order: 1;
 }
 
 .eighth_page h2 {
     order: 0;
-}
-
-.eighth_page img {
-    order: 1;
 }
 
 .eighth_page .book_form {
@@ -685,8 +671,6 @@ footer {
 
     .footer_item>img {
         flex-basis: 16px;
-        width: 16px;
-        height: 16px;
     }
 
     .footer_world {
@@ -720,10 +704,6 @@ footer {
     .logo {
         margin: 0;
         font-size: 15px;
-    }
-
-    .header_contacts {
-        display: none;
     }
 
     .navigation {
@@ -867,9 +847,6 @@ footer {
         grid-row: 1;
     }
 
-    .footer_contacts {
-        grid-template-columns: repeat(4, 1fr);
-    }
 }
 
 @media (min-width: 1024px) {
@@ -880,16 +857,6 @@ footer {
     .logo {
         position: static;
         transform: none;
-    }
-
-    .first_page {
-        z-index: 0;
-    }
-
-    .third_page {
-        position: relative;
-        z-index: 1;
-        background: var(--light);
     }
 
     .menu_button {
@@ -917,9 +884,6 @@ footer {
     }
 
     .first_page>.container {
-        display: flex;
-        flex-direction: column;
-        gap: 24px;
         padding-bottom: 100px;
     }
 
@@ -963,20 +927,6 @@ footer {
         font-size: 36px;
     }
 
-    .first_page_gallery img {
-        height: auto;
-    }
-
-    .second_page>.container {
-        grid-template-columns: 1fr 1fr;
-    }
-
-    .languages_block {
-        grid-column: 1;
-        grid-row: 2;
-    }
-
-
     .first_page,
     .second_page,
     .third_page,
@@ -987,11 +937,6 @@ footer {
     .eighth_page,
     .ninth_page {
         padding: 40px;
-    }
-
-    .nav_block {
-        grid-column: 2;
-        grid-row: 1 / span 2;
     }
 
     .industry_list {
@@ -1006,12 +951,7 @@ footer {
 
 
     .eighth_page img {
-        grid-column: 2;
         grid-row: 1 / span 2;
-        align-self: center;
-        justify-self: center;
-        width: min(220px, 70%);
-        height: 320px;
     }
 
     .eighth_page h2 {
