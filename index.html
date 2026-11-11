@@ -56,12 +56,22 @@
                         mobile applications of your customers' devices</p>
                 </div>
                 <div class="first_page_gallery">
-                    <img src="src/pic1.jpg" alt="">
-                    <img src="src/pic2.jpg" alt="">
-                    <img src="src/pic3.jpg" alt="">
-                    <img src="src/pic4.jpg" alt="">
-                    <img src="src/pic5.jpg" alt="">
-                    <img src="src/pic6.jpg" alt="">
+                    <div class="gallery_column">
+                        <img src="src/pic1.jpg" alt="">
+                        <img src="src/pic3.jpg" alt="">
+                        <img src="src/pic5.jpg" alt="">
+                        <img src="src/pic1.jpg" alt="">
+                        <img src="src/pic3.jpg" alt="">
+                        <img src="src/pic5.jpg" alt="">
+                    </div>
+                    <div class="gallery_column">
+                        <img src="src/pic2.jpg" alt="">
+                        <img src="src/pic4.jpg" alt="">
+                        <img src="src/pic6.jpg" alt="">
+                        <img src="src/pic2.jpg" alt="">
+                        <img src="src/pic4.jpg" alt="">
+                        <img src="src/pic6.jpg" alt="">
+                    </div>
                 </div>
                 <form class="consultation">
                     <strong>Leave your contacts and we will call you back within 30 minutes</strong>
@@ -275,10 +285,10 @@
             <div class="container">
                 <h2>FAQ</h2>
                 <div class="faq_list">
-                    <div class="faq_item is-open">
-                        <button class="faq_question" type="button" aria-expanded="true">
+                    <div class="faq_item">
+                        <button class="faq_question" type="button" aria-expanded="false">
                             <span>How long will development take?</span>
-                            <img src="src/ico/+silver.svg" alt="">
+                            <img src="src/ico/+blue.svg" alt="">
                         </button>
                         <div class="faq_answer">
                             <p>Development terms directly depend on the requirements for the mobile application, the
@@ -349,34 +359,7 @@
         </div>
     </footer>
 
-    <script>
-        const menu = document.querySelector('.mobile_menu');
-        const menuButton = document.querySelector('.menu_button');
-        const closeMenu = () => {
-            menu.classList.remove('open');
-            menuButton.setAttribute('aria-expanded', 'false');
-            menu.setAttribute('aria-hidden', 'true');
-        };
-        menuButton.onclick = () => {
-            menu.classList.add('open');
-            menuButton.setAttribute('aria-expanded', 'true');
-            menu.setAttribute('aria-hidden', 'false');
-        };
-        document.querySelector('.menu_close').onclick = closeMenu;
-        menu.querySelectorAll('a').forEach(link => link.onclick = closeMenu);
-        document.addEventListener('keydown', event => {
-            if (event.key === 'Escape' && menu.classList.contains('open')) closeMenu();
-        });
-
-        document.querySelectorAll('.faq_question').forEach(question => {
-            question.onclick = () => {
-                const item = question.closest('.faq_item');
-                const isOpen = item.classList.toggle('is-open');
-                question.setAttribute('aria-expanded', String(isOpen));
-                question.querySelector('img').src = isOpen ? 'src/ico/+silver.svg' : 'src/ico/+blue.svg';
-            };
-        });
-    </script>
+    <script src="script.js"></script>
 </body>
 
 </html>

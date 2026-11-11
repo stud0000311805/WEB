@@ -119,7 +119,7 @@ h2 span,
 .menu_close {
     position: absolute;
     top: 16px;
-    right: 24px;
+    left: 24px;
     font-size: 28px;
 }
 
@@ -238,8 +238,10 @@ button[type="submit"] {
     display: grid;
     grid-template-columns: repeat(2, 1fr);
     width: calc(100% + 24px);
+    height: 1000px;
     margin: 0 0 -800px 90px;
     gap: 8px;
+    overflow: hidden;
     transform: rotate(-12deg);
 }
 
@@ -247,6 +249,39 @@ button[type="submit"] {
     width: 100%;
     height: auto;
     border-radius: 24px;
+}
+
+.gallery_column {
+    display: grid;
+    min-width: 0;
+    gap: 8px;
+    will-change: transform;
+    animation: gallery-scroll-up 25s linear infinite;
+}
+
+.gallery_column:nth-child(2) {
+    animation-name: gallery-scroll-down;
+    animation-duration: 25s;
+}
+
+@keyframes gallery-scroll-up {
+    from {
+        transform: translateY(0);
+    }
+
+    to {
+        transform: translateY(-50%);
+    }
+}
+
+@keyframes gallery-scroll-down {
+    from {
+        transform: translateY(-50%);
+    }
+
+    to {
+        transform: translateY(0);
+    }
 }
 
 .second_page {
